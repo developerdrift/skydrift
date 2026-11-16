@@ -129,6 +129,7 @@ built from.
   are literature values. They were not queried live from Gaia DR3 (ESA), because IRSA's Gaia
   service was down. Replace them from Gaia DR3 when it is reachable.
 - **No NASA logos, insignia or mission patches** are used anywhere.
+- SkyDrift code is released under the MIT license (see LICENSE).
 
 ## Library licenses
 
