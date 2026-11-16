@@ -1,0 +1,240 @@
+{
+ "note": "PARTIAL coverage from sparse header sampling - full scan not yet run",
+ "diagnostic": "DIAGNOSTIC - bit 21 unmasked because it is set in 100% of exposures at this position and covers ~44% of all pixels uniformly, which is inconsistent with it marking a real per-pixel defect. Meaning not confirmed - treat this detection result as provisional.",
+ "mask_rule": "any nonzero FLAGS masked EXCEPT bits [21]",
+ "data_path": "S3 header scan + IRSA cutout service (TAP/SIA down)",
+ "pm_arcsec_yr": [
+  -8.118,
+  0.68
+ ],
+ "pm_source": "Luhman & Esplin 2016, from memory, unverified",
+ "hypotheses": {
+  "A_epoch2010.5": 2010.5,
+  "B_J2000": 2000.0
+ },
+ "cutout_centre": [
+  133.748722241292,
+  -7.241290972598282
+ ],
+ "n_exposures": 24,
+ "counts": {
+  "D1": {
+   "0": 4
+  },
+  "D2": {
+   "0": 4
+  },
+  "D3": {
+   "1": 4
+  },
+  "D4": {
+   "0": 4
+  },
+  "D5": {
+   "0": 4
+  },
+  "D6": {
+   "1": 4
+  }
+ },
+ "visits": {
+  "0": {
+   "dates": [
+    "2025-05-06"
+   ],
+   "bands": [
+    "D1",
+    "D2",
+    "D4",
+    "D5"
+   ]
+  },
+  "1": {
+   "dates": [
+    "2026-04-23"
+   ],
+   "bands": [
+    "D3",
+    "D6"
+   ]
+  }
+ },
+ "wavelength_um": {
+  "D1": [
+   0.9927,
+   1.0164,
+   1.0407,
+   1.0655
+  ],
+  "D2": [
+   1.2797,
+   1.3101,
+   1.3409,
+   1.3729
+  ],
+  "D3": [
+   1.8782,
+   1.9218,
+   1.9654,
+   2.0111
+  ],
+  "D4": [
+   3.3581,
+   3.4493,
+   3.5424,
+   3.6384
+  ],
+  "D5": [
+   4.0387,
+   4.0738,
+   4.1091,
+   4.1448
+  ],
+  "D6": [
+   4.6173,
+   4.6511,
+   4.6851,
+   4.7191
+  ]
+ },
+ "flag_frac_any_mean": 0.47,
+ "target_pixel_flagged": 24,
+ "detection": {
+  "D1": {
+   "n": 4,
+   "date": "2025-05-06",
+   "A_epoch2010.5": {
+    "snr": 2.1675520530494903,
+    "flux": 2.6138834127979944,
+    "noise": 1.2059149440589298,
+    "offset_arcsec": 4.973724128880224,
+    "x": 45,
+    "y": 57,
+    "n_cover_at_target": 4
+   },
+   "B_J2000": {
+    "snr": -0.5259692601952736,
+    "flux": -0.6617274241842979,
+    "noise": 1.25811045295427,
+    "offset_arcsec": 5.917831784161029,
+    "x": 69,
+    "y": 59,
+    "n_cover_at_target": 4
+   }
+  },
+  "D2": {
+   "n": 4,
+   "date": "2025-05-06",
+   "A_epoch2010.5": {
+    "snr": 4.760072158365931,
+    "flux": 2.4693261029813196,
+    "noise": 0.5187581240005836,
+    "offset_arcsec": 4.975250407814634,
+    "x": 45,
+    "y": 57,
+    "n_cover_at_target": 4
+   },
+   "B_J2000": {
+    "snr": 1.1552700398177367,
+    "flux": 0.7310349852775707,
+    "noise": 0.6327827781225105,
+    "offset_arcsec": 4.373895948611831,
+    "x": 70,
+    "y": 58,
+    "n_cover_at_target": 4
+   }
+  },
+  "D3": {
+   "n": 4,
+   "date": "2026-04-23",
+   "A_epoch2010.5": {
+    "snr": 3.7894453032575437,
+    "flux": 2.7205559773063723,
+    "noise": 0.717929870888408,
+    "offset_arcsec": 4.553705832654002,
+    "x": 47,
+    "y": 58,
+    "n_cover_at_target": 4
+   },
+   "B_J2000": {
+    "snr": 0.022295528015226513,
+    "flux": 0.012963799042386419,
+    "noise": 0.5814528829966673,
+    "offset_arcsec": 4.378021927702857,
+    "x": 74,
+    "y": 58,
+    "n_cover_at_target": 4
+   }
+  },
+  "D4": {
+   "n": 4,
+   "date": "2025-05-06",
+   "A_epoch2010.5": {
+    "snr": 1.480588518410387,
+    "flux": 0.5547199774528754,
+    "noise": 0.3746618122153498,
+    "offset_arcsec": 4.973724128879916,
+    "x": 45,
+    "y": 57,
+    "n_cover_at_target": 4
+   },
+   "B_J2000": {
+    "snr": -0.29313891415080456,
+    "flux": -0.09437466902738992,
+    "noise": 0.3219452091537704,
+    "offset_arcsec": 5.955789481801925,
+    "x": 71,
+    "y": 61,
+    "n_cover_at_target": 4
+   }
+  },
+  "D5": {
+   "n": 4,
+   "date": "2025-05-06",
+   "A_epoch2010.5": {
+    "snr": 3.50382310858162,
+    "flux": 1.1492346949231562,
+    "noise": 0.32799449610011194,
+    "offset_arcsec": 1.9529166390473616,
+    "x": 44,
+    "y": 57,
+    "n_cover_at_target": 4
+   },
+   "B_J2000": {
+    "snr": -0.6736859472738262,
+    "flux": -0.2419573196157545,
+    "noise": 0.35915447040994697,
+    "offset_arcsec": 5.955990618891369,
+    "x": 71,
+    "y": 61,
+    "n_cover_at_target": 4
+   }
+  },
+  "D6": {
+   "n": 4,
+   "date": "2026-04-23",
+   "A_epoch2010.5": {
+    "snr": 7.893088885115896,
+    "flux": 2.333207596325066,
+    "noise": 0.29560133305033814,
+    "offset_arcsec": 0.20680644420369879,
+    "x": 46,
+    "y": 57,
+    "n_cover_at_target": 4
+   },
+   "B_J2000": {
+    "snr": -0.4401919092984392,
+    "flux": -0.15766410465452133,
+    "noise": 0.35817129148466237,
+    "offset_arcsec": 2.816215792757083,
+    "x": 74,
+    "y": 60,
+    "n_cover_at_target": 3
+   }
+  }
+ },
+ "detected_D6": {
+  "A_epoch2010.5": true,
+  "B_J2000": false
+ }
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<!-- AI-assisted: written with Claude Code (Anthropic). See AI_USAGE.md. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkyDrift</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"><div class="nebula"></div><div class="stars s1"></div><div class="stars s2"></div><div class="stars s3"></div></div>
+<script>/* pause background twinkle while the tab is hidden (CSS reads the class) */
+document.addEventListener("visibilitychange", () => document.documentElement.classList.toggle("tab-hidden", document.hidden));</script>
+<div class="shell">
+<header id="chrome-head" class="topbar">
+  <div class="titles">
+    <h1 class="brand"><span class="logo">◐</span> SkyDrift</h1>
+    <p class="tag">Blink SPHEREx images of any patch of sky. Watch what moves, and what changes.</p>
+  </div>
+  <a class="toplink" href="validation" id="vallink">Truth check →</a>
+</header>
+<div class="horizon" aria-hidden="true"></div>
+
+<section id="controls" class="controls">
+  <div class="pillbar glass">
+    <div class="presets" id="presets"></div>
+    <span class="divider" aria-hidden="true"></span>
+    <label>Detector <select id="band"></select></label>
+    <label>Mode <select id="mode">
+      <option value="visits">Visit blink</option>
+      <option value="exposures">Exposure blink</option>
+      <option value="add">Add (all epochs)</option>
+      <option value="subtract">Subtract A − B</option>
+    </select></label>
+    <label id="visitpick" hidden>Visit <select id="visitsel"></select></label>
+    <span id="subpick" hidden>
+      <label>A <select id="suba"></select></label>
+      <label>B <select id="subb"></select></label>
+    </span>
+  </div>
+  <div class="posbar glass">
+    <form id="form" autocomplete="off">
+      <label>RA <input id="ra" placeholder="269.45 or 17:57:48.5" required></label>
+      <label>Dec <input id="dec" placeholder="+4.74 or +04:44:22" required></label>
+      <label>Field (arcmin) <input id="fov" type="number" min="2" max="30" step="1" value="6"></label>
+      <button id="go" class="primary" type="submit">Load</button>
+    </form>
+    <div id="progress" hidden><div class="bar"><div id="pbar"></div></div><span id="ptext"></span></div>
+    <p id="fovwarn" class="warn" hidden>Bigger fields are slower: they need larger cutouts and more processing.</p>
+    <p id="err" class="err" hidden></p>
+    <div id="staticnote" class="staticnote" hidden>
+      <span class="fine">Static showcase: the five presets are pre-built; typing a position needs the local server.</span>
+      <details class="inline-details"><summary>Details</summary>
+        <p class="fine"><b>Why can't I type a position here?</b> This is the static showcase (no server). The five presets are
+        pre-built, but any other position has to be fetched from IRSA and processed on demand, which needs the
+        small local server: <code>python -m venv .venv</code>, install <code>requirements.txt</code>,
+        then <code>python -m app.server</code> and open <code>http://127.0.0.1:8000/</code>.
+        Full steps: <a href="README.md">README → Run locally</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<main id="viewer" class="layout" hidden>
+  <section class="col-left">
+    <div class="stage-wrap">
+      <canvas id="stage" width="600" height="600"></canvas>
+      <div id="label" class="overlay"></div>
+    </div>
+    <div class="player glass">
+      <button id="prev" title="Previous (←)">◀</button>
+      <button id="play" class="primary" title="Play/pause (space)">▶</button>
+      <button id="next" title="Next (→)">▶︎|</button>
+      <input id="scrub" type="range" min="0" max="0" value="0" aria-label="frame">
+      <label class="speed">Speed <input id="speed" type="range" min="1" max="10" value="3"></label>
+      <button id="zin" title="Zoom in (+)">+</button>
+      <button id="zout" title="Zoom out (−)">−</button>
+      <label class="chk"><input id="cross" type="checkbox" checked> Crosshair</label>
+      <label class="chk"><input id="marks" type="checkbox" checked> Candidates</label>
+    </div>
+    <div class="legend glass" id="legend">
+      <span><i class="sw" style="background:rgb(28,22,40)"></i><b>Masked pixels</b>, flagged by the SPHEREx pipeline (hot, cold, persistence, …).
+        A bright star's <b>saturated core</b> is flagged too, so it shows as a dark blob inside a bright halo.</span>
+      <span><i class="ring ring-pink"></i>candidate / known target (line = measured motion)</span>
+      <span><i class="ring" style="border-color:#f5c26b"></i>variable</span>
+      <span><i class="ring" style="border-color:#a0a0a0"></i>unconfirmed</span>
+      <span><b style="color:#ffe066">×</b> spectrum position</span>
+      <span><b class="pink">+</b> requested position (crosshair)</span>
+    </div>
+  </section>
+
+  <aside class="col-right">
+    <section id="cands" class="card meta"></section>
+    <section id="spec" class="card meta">
+      <h3>Spectrum &amp; light curve</h3>
+      <p class="fine" id="spectext">Click a source on the image (or a marked candidate) to measure it in every exposure from all six detectors.</p>
+      <canvas id="specplot" width="640" height="300" hidden></canvas>
+      <canvas id="lcplot" width="640" height="170" hidden></canvas>
+    </section>
+    <section id="meta" class="card meta"></section>
+    <details id="intro" class="card">
+      <summary>How to spot a mover, in 3 steps</summary>
+      <ol>
+        <li><b>Pick a spot.</b> Tap a preset or type a position. SkyDrift collects every SPHEREx picture of it.</li>
+        <li><b>Watch the blink.</b> Each frame is one visit, months apart. Background stars stay put.
+          A nearby star or brown dwarf <i>hops</i> from frame to frame.</li>
+        <li><b>Check it.</b> Switch to <i>Subtract</i>: a mover leaves a bright/dark pair.
+          Look at the wavelength and dates in the panel before believing anything.</li>
+      </ol>
+      <p class="fine">Why it's fair: SPHEREx sees each spot at a different wavelength in every exposure, so a naive blink
+        flickers for no real reason. We stack each detector per visit, so only real changes show.</p>
+    </details>
+    <div class="embedrow">
+      <button id="embedbtn">Embed this view</button>
+      <button id="linkbtn">Copy link</button>
+      <textarea id="embedcode" readonly hidden></textarea>
+    </div>
+  </aside>
+</main>
+
+<footer id="chrome-foot">
+  Data: SPHEREx (NASA/IPAC Infrared Science Archive). Built for NASA Space Apps 2026.
+  Candidates are not discoveries; check before you claim anything.
+</footer>
+</div>
+<script src="static/app.js"></script>
+</body>
+</html>

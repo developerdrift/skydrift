@@ -1,0 +1,2289 @@
+{
+ "unsaturated": {
+  "n_measurements": 32,
+  "n_stars": 18,
+  "n_consistent": 25,
+  "rms_vector_residual_arcsec": 1.383,
+  "rms_vector_residual_consistent_arcsec": 0.807
+ },
+ "generated": "2026-11-15 21:47",
+ "n_stars": 39,
+ "n_measurements": 48,
+ "n_stars_measured": 29,
+ "n_consistent": 35,
+ "rms_vector_residual_arcsec": 1.86,
+ "rms_vector_residual_consistent_arcsec": 0.852,
+ "caveats": [
+  "Comparison PMs/parallaxes are literature values quoted from memory, not live Gaia DR3 (IRSA TAP down). A wrong catalogue value would show up as an outlier, so outliers are kept.",
+  "Coverage is partial (sampled S3 header scan), so most stars have only 2 visits.",
+  "Unsaturated measurements use the documented photometry mask. Stars that fail it because their core is saturated are re-measured with only the saturation flags unmasked and reported separately (hollow markers, 'saturated': true); their centroids are less reliable.",
+  "Known targets not extracted by source detection are measured with a forced windowed centroid at the predicted position (S/N > 10 required)."
+ ],
+ "rows": [
+  {
+   "star": "2MASS J0415-0935",
+   "band": "D1",
+   "baseline_days": 362.2,
+   "n_matched": 32,
+   "field_scatter_arcsec": 0.536,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 18.2,
+   "meas_shift": 1.86,
+   "pred_shift": 2.26,
+   "meas_en": [
+    1.662,
+    0.839
+   ],
+   "pred_en": [
+    2.193,
+    0.536
+   ],
+   "err_en": [
+    0.606,
+    0.605
+   ],
+   "pa": 63.2,
+   "pred_pa": 76.3,
+   "move_sigma": 3.1,
+   "dipole": false
+  },
+  {
+   "star": "2MASS J0415-0935",
+   "band": "D4",
+   "baseline_days": 361.9,
+   "n_matched": 28,
+   "field_scatter_arcsec": 0.38,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 24.7,
+   "meas_shift": 2.8,
+   "pred_shift": 2.26,
+   "meas_en": [
+    2.598,
+    1.037
+   ],
+   "pred_en": [
+    2.192,
+    0.536
+   ],
+   "err_en": [
+    0.511,
+    0.476
+   ],
+   "pa": 68.2,
+   "pred_pa": 76.3,
+   "move_sigma": 5.5,
+   "dipole": false
+  },
+  {
+   "star": "Epsilon Indi Ba/Bb (preset)",
+   "band": "D1",
+   "baseline_days": 185.8,
+   "n_matched": 25,
+   "field_scatter_arcsec": 0.749,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 79.1,
+   "meas_shift": 2.25,
+   "pred_shift": 2.67,
+   "meas_en": [
+    2.168,
+    -0.618
+   ],
+   "pred_en": [
+    2.479,
+    -1.003
+   ],
+   "err_en": [
+    0.761,
+    0.761
+   ],
+   "pa": 105.9,
+   "pred_pa": 112.0,
+   "move_sigma": 3.0,
+   "dipole": false
+  },
+  {
+   "star": "Epsilon Indi Ba/Bb (preset)",
+   "band": "D2",
+   "baseline_days": 192.5,
+   "n_matched": 24,
+   "field_scatter_arcsec": 1.109,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 239.4,
+   "meas_shift": 4.23,
+   "pred_shift": 2.76,
+   "meas_en": [
+    4.216,
+    -0.368
+   ],
+   "pred_en": [
+    2.549,
+    -1.049
+   ],
+   "err_en": [
+    1.117,
+    1.117
+   ],
+   "pa": 95.0,
+   "pred_pa": 112.4,
+   "move_sigma": 3.8,
+   "dipole": false
+  },
+  {
+   "star": "Epsilon Indi Ba/Bb (preset)",
+   "band": "D4",
+   "baseline_days": 195.7,
+   "n_matched": 18,
+   "field_scatter_arcsec": 0.984,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 191.2,
+   "meas_shift": 3.87,
+   "pred_shift": 2.79,
+   "meas_en": [
+    3.57,
+    -1.492
+   ],
+   "pred_en": [
+    2.575,
+    -1.064
+   ],
+   "err_en": [
+    0.993,
+    0.993
+   ],
+   "pa": 112.7,
+   "pred_pa": 112.4,
+   "move_sigma": 3.9,
+   "dipole": false
+  },
+  {
+   "star": "Epsilon Indi Ba/Bb (preset)",
+   "band": "D5",
+   "baseline_days": 189.0,
+   "n_matched": 9,
+   "field_scatter_arcsec": 0.905,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 178.1,
+   "meas_shift": 0.51,
+   "pred_shift": 2.72,
+   "meas_en": [
+    0.507,
+    0.0
+   ],
+   "pred_en": [
+    2.519,
+    -1.033
+   ],
+   "err_en": [
+    0.915,
+    0.915
+   ],
+   "pa": 90.0,
+   "pred_pa": 112.3,
+   "move_sigma": 0.6,
+   "dipole": false
+  },
+  {
+   "star": "Gliese 1061",
+   "band": "D1",
+   "baseline_days": 365.5,
+   "n_matched": 21,
+   "field_scatter_arcsec": 0.353,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 870.6,
+   "meas_shift": 1.21,
+   "pred_shift": 0.84,
+   "meas_en": [
+    0.99,
+    -0.7
+   ],
+   "pred_en": [
+    0.747,
+    -0.375
+   ],
+   "err_en": [
+    0.376,
+    0.376
+   ],
+   "pa": 125.3,
+   "pred_pa": 116.7,
+   "move_sigma": 3.2,
+   "dipole": false
+  },
+  {
+   "star": "Gliese 1061",
+   "band": "D5",
+   "baseline_days": 363.7,
+   "n_matched": 15,
+   "field_scatter_arcsec": 0.424,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1984.7,
+   "meas_shift": 1.03,
+   "pred_shift": 0.83,
+   "meas_en": [
+    0.763,
+    -0.697
+   ],
+   "pred_en": [
+    0.739,
+    -0.368
+   ],
+   "err_en": [
+    0.444,
+    0.444
+   ],
+   "pa": 132.4,
+   "pred_pa": 116.5,
+   "move_sigma": 2.3,
+   "dipole": true
+  },
+  {
+   "star": "Gliese 1061",
+   "band": "D6",
+   "baseline_days": 366.7,
+   "n_matched": 9,
+   "field_scatter_arcsec": 0.454,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1705.5,
+   "meas_shift": 1.3,
+   "pred_shift": 0.84,
+   "meas_en": [
+    1.292,
+    -0.16
+   ],
+   "pred_en": [
+    0.752,
+    -0.381
+   ],
+   "err_en": [
+    0.473,
+    0.473
+   ],
+   "pa": 97.1,
+   "pred_pa": 116.9,
+   "move_sigma": 2.8,
+   "dipole": false
+  },
+  {
+   "star": "Gliese 440 (WD)",
+   "band": "D1",
+   "baseline_days": 359.2,
+   "n_matched": 5,
+   "field_scatter_arcsec": 0.505,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 913.4,
+   "meas_shift": 2.54,
+   "pred_shift": 2.63,
+   "meas_en": [
+    2.524,
+    -0.24
+   ],
+   "pred_en": [
+    2.605,
+    -0.35
+   ],
+   "err_en": [
+    0.522,
+    0.522
+   ],
+   "pa": 95.4,
+   "pred_pa": 97.7,
+   "move_sigma": 4.9,
+   "dipole": true
+  },
+  {
+   "star": "Gliese 440 (WD)",
+   "band": "D5",
+   "baseline_days": 367.0,
+   "n_matched": 57,
+   "field_scatter_arcsec": 0.422,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 176.7,
+   "meas_shift": 2.55,
+   "pred_shift": 2.7,
+   "meas_en": [
+    2.535,
+    -0.251
+   ],
+   "pred_en": [
+    2.676,
+    -0.338
+   ],
+   "err_en": [
+    0.442,
+    0.442
+   ],
+   "pa": 95.7,
+   "pred_pa": 97.2,
+   "move_sigma": 5.8,
+   "dipole": false
+  },
+  {
+   "star": "Gliese 687",
+   "band": "D6",
+   "baseline_days": 326.7,
+   "n_matched": 10,
+   "field_scatter_arcsec": 0.553,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 894.6,
+   "meas_shift": 0.98,
+   "pred_shift": 1.23,
+   "meas_en": [
+    0.965,
+    0.165
+   ],
+   "pred_en": [
+    -0.174,
+    -1.222
+   ],
+   "err_en": [
+    0.568,
+    0.568
+   ],
+   "pa": 80.3,
+   "pred_pa": 188.1,
+   "move_sigma": 1.7,
+   "dipole": false
+  },
+  {
+   "star": "Groombridge 1830",
+   "band": "D6",
+   "baseline_days": 358.0,
+   "n_matched": 7,
+   "field_scatter_arcsec": 0.416,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 1554.3,
+   "meas_shift": 5.08,
+   "pred_shift": 6.92,
+   "meas_en": [
+    2.828,
+    -4.214
+   ],
+   "pred_en": [
+    3.929,
+    -5.696
+   ],
+   "err_en": [
+    0.437,
+    0.437
+   ],
+   "pa": 146.1,
+   "pred_pa": 145.4,
+   "move_sigma": 11.6,
+   "dipole": true
+  },
+  {
+   "star": "Kruger 60 A",
+   "band": "D6",
+   "baseline_days": 366.5,
+   "n_matched": 45,
+   "field_scatter_arcsec": 0.432,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 931.8,
+   "meas_shift": 1.31,
+   "pred_shift": 0.76,
+   "meas_en": [
+    -0.434,
+    1.233
+   ],
+   "pred_en": [
+    -0.731,
+    -0.22
+   ],
+   "err_en": [
+    0.451,
+    0.451
+   ],
+   "pa": 340.6,
+   "pred_pa": 253.2,
+   "move_sigma": 2.9,
+   "dipole": false
+  },
+  {
+   "star": "LP 944-20",
+   "band": "D1",
+   "baseline_days": 373.7,
+   "n_matched": 33,
+   "field_scatter_arcsec": 0.503,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 392.1,
+   "meas_shift": 0.3,
+   "pred_shift": 0.45,
+   "meas_en": [
+    -0.015,
+    -0.295
+   ],
+   "pred_en": [
+    0.344,
+    0.288
+   ],
+   "err_en": [
+    0.52,
+    0.52
+   ],
+   "pa": 183.0,
+   "pred_pa": 50.1,
+   "move_sigma": 0.6,
+   "dipole": false
+  },
+  {
+   "star": "LP 944-20",
+   "band": "D2",
+   "baseline_days": 173.4,
+   "n_matched": 31,
+   "field_scatter_arcsec": 0.601,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 841.5,
+   "meas_shift": 0.22,
+   "pred_shift": 0.52,
+   "meas_en": [
+    0.127,
+    -0.179
+   ],
+   "pred_en": [
+    0.434,
+    0.277
+   ],
+   "err_en": [
+    0.615,
+    0.615
+   ],
+   "pa": 144.7,
+   "pred_pa": 57.5,
+   "move_sigma": 0.4,
+   "dipole": false
+  },
+  {
+   "star": "LP 944-20",
+   "band": "D4",
+   "baseline_days": 197.4,
+   "n_matched": 48,
+   "field_scatter_arcsec": 0.294,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1305.5,
+   "meas_shift": 0.52,
+   "pred_shift": 0.1,
+   "meas_en": [
+    -0.343,
+    -0.391
+   ],
+   "pred_en": [
+    -0.099,
+    0.019
+   ],
+   "err_en": [
+    0.322,
+    0.322
+   ],
+   "pa": 221.3,
+   "pred_pa": 280.6,
+   "move_sigma": 1.6,
+   "dipole": false
+  },
+  {
+   "star": "Luhman 16AB",
+   "band": "D1",
+   "baseline_days": 350.0,
+   "n_matched": 17,
+   "field_scatter_arcsec": 0.356,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 308.1,
+   "meas_shift": 1.29,
+   "pred_shift": 2.73,
+   "meas_en": [
+    -1.001,
+    -0.816
+   ],
+   "pred_en": [
+    -2.715,
+    0.266
+   ],
+   "err_en": [
+    0.38,
+    0.38
+   ],
+   "pa": 230.8,
+   "pred_pa": 275.6,
+   "move_sigma": 3.4,
+   "dipole": false
+  },
+  {
+   "star": "Luhman 16AB",
+   "band": "D4",
+   "baseline_days": 339.9,
+   "n_matched": 8,
+   "field_scatter_arcsec": 0.383,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1379.3,
+   "meas_shift": 2.59,
+   "pred_shift": 2.69,
+   "meas_en": [
+    -2.586,
+    0.167
+   ],
+   "pred_en": [
+    -2.678,
+    0.201
+   ],
+   "err_en": [
+    0.405,
+    0.405
+   ],
+   "pa": 273.7,
+   "pred_pa": 274.3,
+   "move_sigma": 6.4,
+   "dipole": false
+  },
+  {
+   "star": "Ross 128",
+   "band": "D5",
+   "baseline_days": 365.2,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.504,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1186.8,
+   "meas_shift": 0.35,
+   "pred_shift": 1.37,
+   "meas_en": [
+    -0.012,
+    -0.354
+   ],
+   "pred_en": [
+    0.607,
+    -1.223
+   ],
+   "err_en": [
+    0.521,
+    0.521
+   ],
+   "pa": 181.9,
+   "pred_pa": 153.6,
+   "move_sigma": 0.7,
+   "dipole": false
+  },
+  {
+   "star": "Ross 128",
+   "band": "D6",
+   "baseline_days": 375.8,
+   "n_matched": 9,
+   "field_scatter_arcsec": 0.478,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1982.8,
+   "meas_shift": 1.08,
+   "pred_shift": 1.39,
+   "meas_en": [
+    0.379,
+    -1.012
+   ],
+   "pred_en": [
+    0.601,
+    -1.248
+   ],
+   "err_en": [
+    0.496,
+    0.496
+   ],
+   "pa": 159.4,
+   "pred_pa": 154.3,
+   "move_sigma": 2.2,
+   "dipole": false
+  },
+  {
+   "star": "Ross 154",
+   "band": "D6",
+   "baseline_days": 174.5,
+   "n_matched": 45,
+   "field_scatter_arcsec": 0.576,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1138.8,
+   "meas_shift": 0.41,
+   "pred_shift": 0.39,
+   "meas_en": [
+    -0.218,
+    -0.346
+   ],
+   "pred_en": [
+    -0.361,
+    -0.148
+   ],
+   "err_en": [
+    0.591,
+    0.591
+   ],
+   "pa": 212.2,
+   "pred_pa": 247.8,
+   "move_sigma": 0.7,
+   "dipole": false
+  },
+  {
+   "star": "Ross 248",
+   "band": "D6",
+   "baseline_days": 363.5,
+   "n_matched": 16,
+   "field_scatter_arcsec": 0.378,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1469.0,
+   "meas_shift": 1.15,
+   "pred_shift": 1.59,
+   "meas_en": [
+    -0.108,
+    -1.146
+   ],
+   "pred_en": [
+    0.114,
+    -1.589
+   ],
+   "err_en": [
+    0.401,
+    0.401
+   ],
+   "pa": 185.4,
+   "pred_pa": 175.9,
+   "move_sigma": 2.9,
+   "dipole": false
+  },
+  {
+   "star": "Teegarden's Star",
+   "band": "D1",
+   "baseline_days": 366.9,
+   "n_matched": 22,
+   "field_scatter_arcsec": 0.596,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 909.9,
+   "meas_shift": 5.58,
+   "pred_shift": 5.15,
+   "meas_en": [
+    3.373,
+    -4.448
+   ],
+   "pred_en": [
+    3.445,
+    -3.822
+   ],
+   "err_en": [
+    0.61,
+    0.61
+   ],
+   "pa": 142.8,
+   "pred_pa": 138.0,
+   "move_sigma": 9.1,
+   "dipole": false
+  },
+  {
+   "star": "UGPS J0722-0540",
+   "band": "D4",
+   "baseline_days": 184.9,
+   "n_matched": 67,
+   "field_scatter_arcsec": 0.356,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 18.0,
+   "meas_shift": 0.87,
+   "pred_shift": 0.96,
+   "meas_en": [
+    -0.213,
+    0.84
+   ],
+   "pred_en": [
+    -0.936,
+    0.234
+   ],
+   "err_en": [
+    0.396,
+    0.396
+   ],
+   "pa": 345.8,
+   "pred_pa": 284.0,
+   "move_sigma": 2.2,
+   "dipole": false
+  },
+  {
+   "star": "VB 10",
+   "band": "D1",
+   "baseline_days": 363.9,
+   "n_matched": 6,
+   "field_scatter_arcsec": 0.211,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 612.3,
+   "meas_shift": 1.9,
+   "pred_shift": 1.44,
+   "meas_en": [
+    -1.654,
+    -0.937
+   ],
+   "pred_en": [
+    -0.575,
+    -1.324
+   ],
+   "err_en": [
+    0.249,
+    0.249
+   ],
+   "pa": 240.5,
+   "pred_pa": 203.5,
+   "move_sigma": 7.6,
+   "dipole": false
+  },
+  {
+   "star": "VB 10",
+   "band": "D6",
+   "baseline_days": 150.6,
+   "n_matched": 28,
+   "field_scatter_arcsec": 0.148,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 572.9,
+   "meas_shift": 0.63,
+   "pred_shift": 0.77,
+   "meas_en": [
+    -0.431,
+    -0.461
+   ],
+   "pred_en": [
+    -0.548,
+    -0.547
+   ],
+   "err_en": [
+    0.198,
+    0.198
+   ],
+   "pa": 223.1,
+   "pred_pa": 225.0,
+   "move_sigma": 3.2,
+   "dipole": false
+  },
+  {
+   "star": "Van Maanen 2",
+   "band": "D1",
+   "baseline_days": 362.9,
+   "n_matched": 21,
+   "field_scatter_arcsec": 0.651,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 761.8,
+   "meas_shift": 2.17,
+   "pred_shift": 2.96,
+   "meas_en": [
+    1.199,
+    -1.806
+   ],
+   "pred_en": [
+    1.224,
+    -2.692
+   ],
+   "err_en": [
+    0.664,
+    0.664
+   ],
+   "pa": 146.4,
+   "pred_pa": 155.6,
+   "move_sigma": 3.3,
+   "dipole": true
+  },
+  {
+   "star": "WISE 0855-0714 (preset)",
+   "band": "D3",
+   "baseline_days": 167.4,
+   "n_matched": 62,
+   "field_scatter_arcsec": 0.462,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 55.6,
+   "meas_shift": 0.94,
+   "pred_shift": 4.61,
+   "meas_en": [
+    -0.113,
+    -0.934
+   ],
+   "pred_en": [
+    -4.577,
+    0.541
+   ],
+   "err_en": [
+    0.48,
+    0.481
+   ],
+   "pa": 186.9,
+   "pred_pa": 276.7,
+   "move_sigma": 2.0,
+   "dipole": false
+  },
+  {
+   "star": "WISE 0855-0714 (preset)",
+   "band": "D5",
+   "baseline_days": 371.5,
+   "n_matched": 16,
+   "field_scatter_arcsec": 0.644,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 14.6,
+   "meas_shift": 5.36,
+   "pred_shift": 8.28,
+   "meas_en": [
+    -5.354,
+    0.265
+   ],
+   "pred_en": [
+    -8.251,
+    0.711
+   ],
+   "err_en": [
+    0.689,
+    0.69
+   ],
+   "pa": 272.8,
+   "pred_pa": 274.9,
+   "move_sigma": 7.8,
+   "dipole": false
+  },
+  {
+   "star": "WISE 0855-0714 (preset)",
+   "band": "D6",
+   "baseline_days": 167.4,
+   "n_matched": 14,
+   "field_scatter_arcsec": 0.485,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 15.8,
+   "meas_shift": 4.07,
+   "pred_shift": 4.61,
+   "meas_en": [
+    -3.989,
+    0.794
+   ],
+   "pred_en": [
+    -4.577,
+    0.541
+   ],
+   "err_en": [
+    0.58,
+    0.602
+   ],
+   "pa": 281.2,
+   "pred_pa": 276.7,
+   "move_sigma": 7.0,
+   "dipole": true
+  },
+  {
+   "star": "Wolf 359",
+   "band": "D5",
+   "baseline_days": 344.7,
+   "n_matched": 14,
+   "field_scatter_arcsec": 0.94,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1212.6,
+   "meas_shift": 4.33,
+   "pred_shift": 4.43,
+   "meas_en": [
+    -3.512,
+    -2.537
+   ],
+   "pred_en": [
+    -3.608,
+    -2.578
+   ],
+   "err_en": [
+    0.949,
+    0.949
+   ],
+   "pa": 234.2,
+   "pred_pa": 234.5,
+   "move_sigma": 4.6,
+   "dipole": false
+  },
+  {
+   "star": "Gliese 1",
+   "band": "D6",
+   "baseline_days": 170.1,
+   "n_matched": 9,
+   "field_scatter_arcsec": 0.456,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1127.5,
+   "meas_shift": 2.79,
+   "pred_shift": 2.61,
+   "meas_en": [
+    2.617,
+    -0.961
+   ],
+   "pred_en": [
+    2.245,
+    -1.337
+   ],
+   "err_en": [
+    0.475,
+    0.475
+   ],
+   "pa": 110.2,
+   "pred_pa": 120.8,
+   "move_sigma": 5.9,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 412 A",
+   "band": "D1",
+   "baseline_days": 369.0,
+   "n_matched": 5,
+   "field_scatter_arcsec": 0.171,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 551.3,
+   "meas_shift": 9.83,
+   "pred_shift": 4.56,
+   "meas_en": [
+    -9.205,
+    3.459
+   ],
+   "pred_en": [
+    -4.457,
+    0.945
+   ],
+   "err_en": [
+    0.216,
+    0.216
+   ],
+   "pa": 290.6,
+   "pred_pa": 282.0,
+   "move_sigma": 45.6,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 412 A",
+   "band": "D4",
+   "baseline_days": 364.5,
+   "n_matched": 14,
+   "field_scatter_arcsec": 0.504,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 614.4,
+   "meas_shift": 3.39,
+   "pred_shift": 4.49,
+   "meas_en": [
+    -1.003,
+    3.24
+   ],
+   "pred_en": [
+    -4.395,
+    0.939
+   ],
+   "err_en": [
+    0.521,
+    0.521
+   ],
+   "pa": 342.8,
+   "pred_pa": 282.1,
+   "move_sigma": 6.5,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 412 A",
+   "band": "D5",
+   "baseline_days": 362.0,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.753,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1217.9,
+   "meas_shift": 5.46,
+   "pred_shift": 4.46,
+   "meas_en": [
+    -4.987,
+    2.22
+   ],
+   "pred_en": [
+    -4.361,
+    0.936
+   ],
+   "err_en": [
+    0.764,
+    0.764
+   ],
+   "pa": 294.0,
+   "pred_pa": 282.1,
+   "move_sigma": 7.1,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 445",
+   "band": "D1",
+   "baseline_days": 359.8,
+   "n_matched": 8,
+   "field_scatter_arcsec": 0.667,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 394.5,
+   "meas_shift": 1.81,
+   "pred_shift": 0.86,
+   "meas_en": [
+    0.94,
+    1.545
+   ],
+   "pred_en": [
+    0.717,
+    0.469
+   ],
+   "err_en": [
+    0.679,
+    0.679
+   ],
+   "pa": 31.3,
+   "pred_pa": 56.8,
+   "move_sigma": 2.7,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 725 A",
+   "band": "D6",
+   "baseline_days": 372.8,
+   "n_matched": 20,
+   "field_scatter_arcsec": 0.321,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 1953.4,
+   "meas_shift": 2.59,
+   "pred_shift": 2.3,
+   "meas_en": [
+    -0.924,
+    2.414
+   ],
+   "pred_en": [
+    -1.37,
+    1.849
+   ],
+   "err_en": [
+    0.347,
+    0.347
+   ],
+   "pa": 339.0,
+   "pred_pa": 323.5,
+   "move_sigma": 7.5,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 83.1",
+   "band": "D1",
+   "baseline_days": 360.5,
+   "n_matched": 14,
+   "field_scatter_arcsec": 0.348,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 854.4,
+   "meas_shift": 0.87,
+   "pred_shift": 2.06,
+   "meas_en": [
+    0.873,
+    -0.052
+   ],
+   "pred_en": [
+    1.082,
+    -1.749
+   ],
+   "err_en": [
+    0.372,
+    0.372
+   ],
+   "pa": 93.4,
+   "pred_pa": 148.3,
+   "move_sigma": 2.4,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Kapteyn's Star",
+   "band": "D1",
+   "baseline_days": 366.2,
+   "n_matched": 13,
+   "field_scatter_arcsec": 0.755,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 546.1,
+   "meas_shift": 8.12,
+   "pred_shift": 8.7,
+   "meas_en": [
+    6.252,
+    -5.18
+   ],
+   "pred_en": [
+    6.531,
+    -5.744
+   ],
+   "err_en": [
+    0.766,
+    0.766
+   ],
+   "pa": 129.6,
+   "pred_pa": 131.3,
+   "move_sigma": 10.6,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Lacaille 9352",
+   "band": "D5",
+   "baseline_days": 359.8,
+   "n_matched": 4,
+   "field_scatter_arcsec": 0.778,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 581.2,
+   "meas_shift": 6.75,
+   "pred_shift": 6.79,
+   "meas_en": [
+    6.56,
+    1.582
+   ],
+   "pred_en": [
+    6.658,
+    1.322
+   ],
+   "err_en": [
+    0.789,
+    0.789
+   ],
+   "pa": 76.4,
+   "pred_pa": 78.8,
+   "move_sigma": 8.6,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Lalande 21185",
+   "band": "D5",
+   "baseline_days": 355.1,
+   "n_matched": 4,
+   "field_scatter_arcsec": 0.327,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 580.1,
+   "meas_shift": 5.74,
+   "pred_shift": 4.65,
+   "meas_en": [
+    2.714,
+    -5.061
+   ],
+   "pred_en": [
+    -0.534,
+    -4.617
+   ],
+   "err_en": [
+    0.352,
+    0.352
+   ],
+   "pa": 151.8,
+   "pred_pa": 186.6,
+   "move_sigma": 16.3,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Luyten's Star",
+   "band": "D1",
+   "baseline_days": 182.1,
+   "n_matched": 23,
+   "field_scatter_arcsec": 0.259,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 526.5,
+   "meas_shift": 5.47,
+   "pred_shift": 1.79,
+   "meas_en": [
+    1.977,
+    -5.105
+   ],
+   "pred_en": [
+    -0.233,
+    -1.778
+   ],
+   "err_en": [
+    0.291,
+    0.291
+   ],
+   "pa": 158.8,
+   "pred_pa": 187.5,
+   "move_sigma": 18.8,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Luyten's Star",
+   "band": "D4",
+   "baseline_days": 184.7,
+   "n_matched": 17,
+   "field_scatter_arcsec": 0.19,
+   "status": "measured",
+   "matches_prediction": false,
+   "snr": 529.9,
+   "meas_shift": 2.74,
+   "pred_shift": 1.82,
+   "meas_en": [
+    1.029,
+    2.543
+   ],
+   "pred_en": [
+    -0.23,
+    -1.801
+   ],
+   "err_en": [
+    0.231,
+    0.231
+   ],
+   "pa": 22.0,
+   "pred_pa": 187.3,
+   "move_sigma": 11.9,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Luyten's Star",
+   "band": "D6",
+   "baseline_days": 175.3,
+   "n_matched": 10,
+   "field_scatter_arcsec": 0.443,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 700.0,
+   "meas_shift": 1.87,
+   "pred_shift": 1.71,
+   "meas_en": [
+    0.038,
+    -1.873
+   ],
+   "pred_en": [
+    -0.245,
+    -1.697
+   ],
+   "err_en": [
+    0.462,
+    0.462
+   ],
+   "pa": 178.8,
+   "pred_pa": 188.2,
+   "move_sigma": 4.1,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Proxima Centauri",
+   "band": "D1",
+   "baseline_days": 362.2,
+   "n_matched": 30,
+   "field_scatter_arcsec": 0.438,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 761.3,
+   "meas_shift": 3.04,
+   "pred_shift": 3.82,
+   "meas_en": [
+    -3.041,
+    0.114
+   ],
+   "pred_en": [
+    -3.751,
+    0.739
+   ],
+   "err_en": [
+    0.457,
+    0.457
+   ],
+   "pa": 272.2,
+   "pred_pa": 281.2,
+   "move_sigma": 6.7,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Proxima Centauri",
+   "band": "D5",
+   "baseline_days": 360.6,
+   "n_matched": 14,
+   "field_scatter_arcsec": 0.912,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 419.4,
+   "meas_shift": 3.44,
+   "pred_shift": 3.8,
+   "meas_en": [
+    -2.879,
+    1.882
+   ],
+   "pred_en": [
+    -3.733,
+    0.72
+   ],
+   "err_en": [
+    0.922,
+    0.922
+   ],
+   "pa": 303.2,
+   "pred_pa": 280.9,
+   "move_sigma": 3.7,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "YZ Ceti",
+   "band": "D1",
+   "baseline_days": 367.8,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.632,
+   "status": "measured",
+   "matches_prediction": true,
+   "snr": 643.8,
+   "meas_shift": 1.14,
+   "pred_shift": 1.37,
+   "meas_en": [
+    0.089,
+    1.132
+   ],
+   "pred_en": [
+    1.216,
+    0.638
+   ],
+   "err_en": [
+    0.645,
+    0.645
+   ],
+   "pa": 4.5,
+   "pred_pa": 62.3,
+   "move_sigma": 1.8,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "61 Cygni A",
+   "band": "D1",
+   "baseline_days": 371.4,
+   "n_matched": 15,
+   "field_scatter_arcsec": 0.241,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "61 Cygni A",
+   "band": "D4",
+   "baseline_days": 366.5,
+   "n_matched": 13,
+   "field_scatter_arcsec": 0.29,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Barnard's Star (preset)",
+   "band": "D1",
+   "baseline_days": 353.8,
+   "n_matched": 25,
+   "field_scatter_arcsec": 0.316,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Barnard's Star (preset)",
+   "band": "D4",
+   "baseline_days": 332.7,
+   "n_matched": 36,
+   "field_scatter_arcsec": 0.532,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Epsilon Indi A",
+   "band": "D1",
+   "baseline_days": 185.8,
+   "n_matched": 1,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Epsilon Indi A",
+   "band": "D2",
+   "baseline_days": 192.5,
+   "n_matched": 1,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Epsilon Indi A",
+   "band": "D4",
+   "baseline_days": 195.7,
+   "n_matched": 2,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Epsilon Indi A",
+   "band": "D5",
+   "baseline_days": 189.0,
+   "n_matched": 7,
+   "field_scatter_arcsec": 0.475,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 1",
+   "band": "D1",
+   "baseline_days": 364.2,
+   "n_matched": 6,
+   "field_scatter_arcsec": 1.543,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 1",
+   "band": "D3",
+   "baseline_days": 170.1,
+   "n_matched": 9,
+   "field_scatter_arcsec": 0.592,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 15 A",
+   "band": "D1",
+   "baseline_days": 363.7,
+   "n_matched": 19,
+   "field_scatter_arcsec": 0.362,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 15 A",
+   "band": "D4",
+   "baseline_days": 364.0,
+   "n_matched": 17,
+   "field_scatter_arcsec": 0.249,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 293 (WD)",
+   "band": "D1",
+   "baseline_days": 369.7,
+   "n_matched": 86,
+   "field_scatter_arcsec": 0.547,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 293 (WD)",
+   "band": "D4",
+   "baseline_days": 366.7,
+   "n_matched": 60,
+   "field_scatter_arcsec": 0.499,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 380",
+   "band": "D1",
+   "baseline_days": 376.2,
+   "n_matched": 3,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Gliese 380",
+   "band": "D2",
+   "baseline_days": 184.1,
+   "n_matched": 1,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Gliese 380",
+   "band": "D4",
+   "baseline_days": 193.7,
+   "n_matched": 1,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Gliese 380",
+   "band": "D5",
+   "baseline_days": 188.6,
+   "n_matched": 3,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Gliese 412 A",
+   "band": "D2",
+   "baseline_days": 362.0,
+   "n_matched": 7,
+   "field_scatter_arcsec": 0.098,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 440 (WD)",
+   "band": "D2",
+   "baseline_days": 367.0,
+   "n_matched": 3,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Gliese 674",
+   "band": "D1",
+   "baseline_days": 358.4,
+   "n_matched": 1,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Gliese 674",
+   "band": "D4",
+   "baseline_days": 359.3,
+   "n_matched": 0,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Gliese 687",
+   "band": "D2",
+   "baseline_days": 305.0,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.215,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 687",
+   "band": "D3",
+   "baseline_days": 329.0,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.504,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 687",
+   "band": "D4",
+   "baseline_days": 356.7,
+   "n_matched": 13,
+   "field_scatter_arcsec": 0.423,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 725 A",
+   "band": "D1",
+   "baseline_days": 371.8,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.458,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 725 A",
+   "band": "D2",
+   "baseline_days": 156.0,
+   "n_matched": 13,
+   "field_scatter_arcsec": 0.966,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 725 A",
+   "band": "D3",
+   "baseline_days": 372.8,
+   "n_matched": 14,
+   "field_scatter_arcsec": 0.271,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 876",
+   "band": "D1",
+   "baseline_days": 213.7,
+   "n_matched": 9,
+   "field_scatter_arcsec": 0.545,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Groombridge 1830",
+   "band": "D1",
+   "baseline_days": 365.6,
+   "n_matched": 7,
+   "field_scatter_arcsec": 0.498,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Groombridge 1830",
+   "band": "D2",
+   "baseline_days": 359.8,
+   "n_matched": 7,
+   "field_scatter_arcsec": 0.262,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Groombridge 1830",
+   "band": "D3",
+   "baseline_days": 358.0,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.688,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Groombridge 1830",
+   "band": "D4",
+   "baseline_days": 364.3,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.696,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Kruger 60 A",
+   "band": "D3",
+   "baseline_days": 366.5,
+   "n_matched": 3,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Kruger 60 A",
+   "band": "D4",
+   "baseline_days": 336.2,
+   "n_matched": 4,
+   "field_scatter_arcsec": 0.485,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "LP 944-20",
+   "band": "D5",
+   "baseline_days": 173.8,
+   "n_matched": 5,
+   "field_scatter_arcsec": 0.794,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Lacaille 9352",
+   "band": "D1",
+   "baseline_days": 366.6,
+   "n_matched": 1,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Lacaille 9352",
+   "band": "D2",
+   "baseline_days": 359.8,
+   "n_matched": 3,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Lacaille 9352",
+   "band": "D4",
+   "baseline_days": 366.9,
+   "n_matched": 6,
+   "field_scatter_arcsec": 0.399,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Lalande 21185",
+   "band": "D1",
+   "baseline_days": 360.7,
+   "n_matched": 3,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Lalande 21185",
+   "band": "D2",
+   "baseline_days": 355.1,
+   "n_matched": 4,
+   "field_scatter_arcsec": 0.078,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Lalande 21185",
+   "band": "D4",
+   "baseline_days": 357.0,
+   "n_matched": 6,
+   "field_scatter_arcsec": 0.657,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Luyten's Star",
+   "band": "D3",
+   "baseline_days": 175.3,
+   "n_matched": 15,
+   "field_scatter_arcsec": 1.14,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Proxima Centauri",
+   "band": "D2",
+   "baseline_days": 360.6,
+   "n_matched": 3,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "Proxima Centauri",
+   "band": "D4",
+   "baseline_days": 361.9,
+   "n_matched": 4,
+   "field_scatter_arcsec": 0.297,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Ross 128",
+   "band": "D1",
+   "baseline_days": 387.8,
+   "n_matched": 11,
+   "field_scatter_arcsec": 1.0,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Ross 154",
+   "band": "D3",
+   "baseline_days": 174.5,
+   "n_matched": 10,
+   "field_scatter_arcsec": 0.562,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Ross 154",
+   "band": "D4",
+   "baseline_days": 367.4,
+   "n_matched": 2,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "UGPS J0722-0540",
+   "band": "D1",
+   "baseline_days": 179.6,
+   "n_matched": 61,
+   "field_scatter_arcsec": 0.573,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "VB 10",
+   "band": "D3",
+   "baseline_days": 150.6,
+   "n_matched": 0,
+   "field_scatter_arcsec": null,
+   "status": "skipped: too few matched sources for a field offset"
+  },
+  {
+   "star": "WISE 0855-0714 (preset)",
+   "band": "D1",
+   "baseline_days": 362.9,
+   "n_matched": 54,
+   "field_scatter_arcsec": 0.4,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "WISE 0855-0714 (preset)",
+   "band": "D2",
+   "baseline_days": 371.5,
+   "n_matched": 60,
+   "field_scatter_arcsec": 0.493,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "WISE 0855-0714 (preset)",
+   "band": "D4",
+   "baseline_days": 363.5,
+   "n_matched": 48,
+   "field_scatter_arcsec": 0.302,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "WISE J1741+2553",
+   "band": "D1",
+   "baseline_days": 369.6,
+   "n_matched": 35,
+   "field_scatter_arcsec": 1.12,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Wolf 1061",
+   "band": "D1",
+   "baseline_days": 368.6,
+   "n_matched": 32,
+   "field_scatter_arcsec": 0.589,
+   "status": "not measured: not detected unsaturated in both visits"
+  },
+  {
+   "star": "Gliese 1061",
+   "band": "D2",
+   "baseline_days": 363.7,
+   "n_matched": 26,
+   "field_scatter_arcsec": 0.43,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 1269.5,
+   "meas_shift": 2.06,
+   "pred_shift": 0.83,
+   "meas_en": [
+    2.055,
+    -0.159
+   ],
+   "pred_en": [
+    0.739,
+    -0.368
+   ],
+   "err_en": [
+    0.45,
+    0.45
+   ],
+   "pa": 94.4,
+   "pred_pa": 116.5,
+   "move_sigma": 4.6,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 1061",
+   "band": "D3",
+   "baseline_days": 366.7,
+   "n_matched": 38,
+   "field_scatter_arcsec": 0.449,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 1223.7,
+   "meas_shift": 1.34,
+   "pred_shift": 0.84,
+   "meas_en": [
+    1.105,
+    -0.765
+   ],
+   "pred_en": [
+    0.752,
+    -0.381
+   ],
+   "err_en": [
+    0.468,
+    0.468
+   ],
+   "pa": 124.7,
+   "pred_pa": 116.9,
+   "move_sigma": 2.9,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 1061",
+   "band": "D4",
+   "baseline_days": 367.7,
+   "n_matched": 20,
+   "field_scatter_arcsec": 0.553,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 1053.0,
+   "meas_shift": 1.19,
+   "pred_shift": 0.85,
+   "meas_en": [
+    0.841,
+    -0.845
+   ],
+   "pred_en": [
+    0.758,
+    -0.384
+   ],
+   "err_en": [
+    0.568,
+    0.568
+   ],
+   "pa": 135.1,
+   "pred_pa": 116.8,
+   "move_sigma": 2.1,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 687",
+   "band": "D1",
+   "baseline_days": 324.9,
+   "n_matched": 11,
+   "field_scatter_arcsec": 0.441,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": false,
+   "snr": 609.3,
+   "meas_shift": 5.04,
+   "pred_shift": 1.05,
+   "meas_en": [
+    -4.806,
+    -1.516
+   ],
+   "pred_en": [
+    -0.169,
+    -1.038
+   ],
+   "err_en": [
+    0.46,
+    0.46
+   ],
+   "pa": 252.5,
+   "pred_pa": 189.3,
+   "move_sigma": 10.9,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Gliese 687",
+   "band": "D5",
+   "baseline_days": 323.5,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.314,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 1453.4,
+   "meas_shift": 0.67,
+   "pred_shift": 1.22,
+   "meas_en": [
+    -0.037,
+    -0.668
+   ],
+   "pred_en": [
+    -0.154,
+    -1.206
+   ],
+   "err_en": [
+    0.34,
+    0.34
+   ],
+   "pa": 183.2,
+   "pred_pa": 187.3,
+   "move_sigma": 2.0,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Groombridge 1830",
+   "band": "D5",
+   "baseline_days": 359.8,
+   "n_matched": 12,
+   "field_scatter_arcsec": 0.526,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 1116.1,
+   "meas_shift": 6.26,
+   "pred_shift": 6.95,
+   "meas_en": [
+    3.743,
+    -5.012
+   ],
+   "pred_en": [
+    3.946,
+    -5.724
+   ],
+   "err_en": [
+    0.543,
+    0.543
+   ],
+   "pa": 143.2,
+   "pred_pa": 145.4,
+   "move_sigma": 11.5,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Kruger 60 A",
+   "band": "D1",
+   "baseline_days": 358.5,
+   "n_matched": 13,
+   "field_scatter_arcsec": 0.492,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": false,
+   "snr": 530.3,
+   "meas_shift": 2.7,
+   "pred_shift": 0.74,
+   "meas_en": [
+    -0.95,
+    2.523
+   ],
+   "pred_en": [
+    -0.7,
+    -0.24
+   ],
+   "err_en": [
+    0.51,
+    0.51
+   ],
+   "pa": 339.4,
+   "pred_pa": 251.1,
+   "move_sigma": 5.3,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Ross 128",
+   "band": "D2",
+   "baseline_days": 365.2,
+   "n_matched": 14,
+   "field_scatter_arcsec": 0.547,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": false,
+   "snr": 684.7,
+   "meas_shift": 2.66,
+   "pred_shift": 1.37,
+   "meas_en": [
+    0.61,
+    2.584
+   ],
+   "pred_en": [
+    0.607,
+    -1.223
+   ],
+   "err_en": [
+    0.563,
+    0.563
+   ],
+   "pa": 13.3,
+   "pred_pa": 153.6,
+   "move_sigma": 4.7,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Ross 128",
+   "band": "D3",
+   "baseline_days": 375.8,
+   "n_matched": 15,
+   "field_scatter_arcsec": 0.398,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": false,
+   "snr": 701.7,
+   "meas_shift": 2.1,
+   "pred_shift": 1.39,
+   "meas_en": [
+    -0.221,
+    2.087
+   ],
+   "pred_en": [
+    0.601,
+    -1.248
+   ],
+   "err_en": [
+    0.419,
+    0.419
+   ],
+   "pa": 354.0,
+   "pred_pa": 154.3,
+   "move_sigma": 5.0,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Ross 154",
+   "band": "D1",
+   "baseline_days": 360.5,
+   "n_matched": 18,
+   "field_scatter_arcsec": 0.376,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 857.4,
+   "meas_shift": 1.47,
+   "pred_shift": 0.66,
+   "meas_en": [
+    1.436,
+    0.322
+   ],
+   "pred_en": [
+    0.637,
+    -0.188
+   ],
+   "err_en": [
+    0.398,
+    0.398
+   ],
+   "pa": 77.3,
+   "pred_pa": 106.5,
+   "move_sigma": 3.7,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Ross 248",
+   "band": "D1",
+   "baseline_days": 363.5,
+   "n_matched": 55,
+   "field_scatter_arcsec": 0.289,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": false,
+   "snr": 1238.7,
+   "meas_shift": 2.65,
+   "pred_shift": 1.59,
+   "meas_en": [
+    0.676,
+    -2.567
+   ],
+   "pred_en": [
+    0.112,
+    -1.59
+   ],
+   "err_en": [
+    0.317,
+    0.317
+   ],
+   "pa": 165.2,
+   "pred_pa": 176.0,
+   "move_sigma": 8.4,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Ross 248",
+   "band": "D3",
+   "baseline_days": 363.5,
+   "n_matched": 31,
+   "field_scatter_arcsec": 0.381,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 889.0,
+   "meas_shift": 1.4,
+   "pred_shift": 1.59,
+   "meas_en": [
+    -0.0,
+    -1.401
+   ],
+   "pred_en": [
+    0.114,
+    -1.589
+   ],
+   "err_en": [
+    0.403,
+    0.403
+   ],
+   "pa": 180.0,
+   "pred_pa": 175.9,
+   "move_sigma": 3.5,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Ross 248",
+   "band": "D4",
+   "baseline_days": 363.6,
+   "n_matched": 32,
+   "field_scatter_arcsec": 0.341,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 1225.7,
+   "meas_shift": 1.89,
+   "pred_shift": 1.59,
+   "meas_en": [
+    -0.559,
+    -1.801
+   ],
+   "pred_en": [
+    0.112,
+    -1.59
+   ],
+   "err_en": [
+    0.365,
+    0.365
+   ],
+   "pa": 197.2,
+   "pred_pa": 176.0,
+   "move_sigma": 5.2,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Wolf 359",
+   "band": "D1",
+   "baseline_days": 359.8,
+   "n_matched": 20,
+   "field_scatter_arcsec": 0.297,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 1045.0,
+   "meas_shift": 4.64,
+   "pred_shift": 4.63,
+   "meas_en": [
+    -4.157,
+    -2.071
+   ],
+   "pred_en": [
+    -3.776,
+    -2.688
+   ],
+   "err_en": [
+    0.325,
+    0.325
+   ],
+   "pa": 243.5,
+   "pred_pa": 234.6,
+   "move_sigma": 14.3,
+   "dipole": false,
+   "saturated": true
+  },
+  {
+   "star": "Wolf 359",
+   "band": "D2",
+   "baseline_days": 344.7,
+   "n_matched": 21,
+   "field_scatter_arcsec": 0.406,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": false,
+   "snr": 864.0,
+   "meas_shift": 2.98,
+   "pred_shift": 4.43,
+   "meas_en": [
+    -2.411,
+    -1.743
+   ],
+   "pred_en": [
+    -3.608,
+    -2.578
+   ],
+   "err_en": [
+    0.426,
+    0.426
+   ],
+   "pa": 234.1,
+   "pred_pa": 234.5,
+   "move_sigma": 7.0,
+   "dipole": true,
+   "saturated": true
+  },
+  {
+   "star": "Wolf 359",
+   "band": "D4",
+   "baseline_days": 355.4,
+   "n_matched": 19,
+   "field_scatter_arcsec": 0.488,
+   "status": "saturated-core measurement dropped (an unsaturated one exists for this star)",
+   "matches_prediction": true,
+   "snr": 1103.4,
+   "meas_shift": 4.21,
+   "pred_shift": 4.58,
+   "meas_en": [
+    -3.87,
+    -1.652
+   ],
+   "pred_en": [
+    -3.725,
+    -2.657
+   ],
+   "err_en": [
+    0.506,
+    0.506
+   ],
+   "pa": 246.9,
+   "pred_pa": 234.5,
+   "move_sigma": 8.3,
+   "dipole": false,
+   "saturated": true
+  }
+ ],
+ "seconds": 714.1
+}

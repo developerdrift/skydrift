@@ -1,0 +1,13 @@
+astropy
+astroquery
+numpy
+scipy
+reproject
+sep
+pillow
+imageio
+matplotlib
+requests
+fastapi
+uvicorn
+pytest

@@ -1,0 +1,50 @@
+{
+ "mode": "static",
+ "presets": [
+  {
+   "key": "barnard",
+   "name": "Barnard's Star",
+   "ra": 269.44629,
+   "dec": 4.76794,
+   "fov": 6.0,
+   "band": "D1",
+   "note": "J2000 position; Gaia DR3 PM (from memory)"
+  },
+  {
+   "key": "eps_indi_b",
+   "name": "Epsilon Indi Ba/Bb",
+   "ra": 331.09594,
+   "dec": -56.80097,
+   "fov": 6.0,
+   "band": "D1",
+   "note": "J2000 (22h04m10.52s -56d46m57.8s); system PM"
+  },
+  {
+   "key": "wise0855",
+   "name": "WISE 0855-0714",
+   "ra": 133.76012,
+   "dec": -7.24224,
+   "fov": 6.0,
+   "band": "D6",
+   "note": "challenge coords; epoch 2010.5 favoured by the Phase 0 D6 diagnostic (provisional); PM Luhman & Esplin 2016"
+  },
+  {
+   "key": "rw_aur",
+   "name": "RW Aurigae",
+   "ra": 76.95642,
+   "dec": 30.40124,
+   "fov": 6.0,
+   "band": "D1",
+   "note": "young variable; PM small (approx.)"
+  },
+  {
+   "key": "r_dra",
+   "name": "R Draconis",
+   "ra": 248.1675,
+   "dec": 66.755,
+   "fov": 6.0,
+   "band": "D1",
+   "note": "Mira variable; PM negligible at this scale"
+  }
+ ]
+}

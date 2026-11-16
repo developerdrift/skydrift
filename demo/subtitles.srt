@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:04,000
+Pick any spot on the sky. SkyDrift gathers every SPHEREx picture of it.
+
+2
+00:00:04,000 --> 00:00:09,000
+SPHEREx sees each spot at a different wavelength every time, so a raw blink flickers.
+
+3
+00:00:09,000 --> 00:00:14,000
+Stacking per visit and per detector keeps only real changes.
+
+4
+00:00:14,000 --> 00:00:19,000
+The coldest known brown dwarf: invisible at 1 µm, bright at 4.6 µm.
+
+5
+00:00:19,000 --> 00:00:24,000
+SkyDrift finds movers itself and measures how far they went.
+
+6
+00:00:24,000 --> 00:00:30,000
+And it checks itself against known stars. Try it on any patch of sky.

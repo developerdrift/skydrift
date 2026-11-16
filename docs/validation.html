@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- AI-assisted: written with Claude Code (Anthropic). See AI_USAGE.md. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkyDrift Validation</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"><div class="nebula"></div><div class="stars s1"></div><div class="stars s2"></div><div class="stars s3"></div></div>
+<script>document.addEventListener("visibilitychange", () => document.documentElement.classList.toggle("tab-hidden", document.hidden));</script>
+<div class="shell page">
+<header class="topbar">
+  <div class="titles">
+    <h1 class="brand"><span class="logo">◐</span> SkyDrift · truth check</h1>
+    <p class="tag">Does the pipeline measure known stellar motions correctly?</p>
+  </div>
+  <a class="toplink" href="./">← back to the blink tool</a>
+</header>
+<div class="horizon" aria-hidden="true"></div>
+<section class="card">
+  <p>For known nearby high-proper-motion stars, SkyDrift measures how far each star moved between its
+    first and last SPHEREx visit (same detector, after removing the field's median offset). It compares
+    that with the shift predicted from the star's proper motion and parallax.</p>
+  <p class="warn" id="caveat"></p>
+  <p id="summary"></p>
+  <img class="plot" src="static/validation/truth_plot.png" alt="Measured vs predicted shift with 1:1 line, and residual vectors">
+</section>
+<section class="card wrap">
+  <table class="v" id="tbl"></table>
+</section>
+<footer>Data: SPHEREx (NASA/IPAC IRSA). Comparison values: literature (see caveats).</footer>
+</div>
+<script src="static/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+ "target": "Barnard's Star",
+ "key": "barnard",
+ "data_source": "IRSA S3 coverage index (background scan; may grow)",
+ "n_exposures": 26,
+ "n_frames": 26,
+ "bands": {
+  "D1": {
+   "n_frames": 8,
+   "visits": [
+    {
+     "date": "2025-09-09",
+     "n": 7,
+     "wav": [
+      0.767,
+      1.056
+     ]
+    },
+    {
+     "date": "2026-03-11",
+     "n": 1,
+     "wav": [
+      0.804,
+      0.804
+     ]
+    }
+   ],
+   "gif": "barnard_visit_blink_D1.gif",
+   "target": {
+    "dt_days": 183.3,
+    "predicted_shift_arcsec": 5.22,
+    "measured_shift_arcsec": NaN,
+    "offsets_from_prediction_arcsec": [
+     NaN,
+     NaN
+    ]
+   },
+   "neighbours": {
+    "n": 3,
+    "median_shift_arcsec": 0.41,
+    "p90_shift_arcsec": 2.28
+   }
+  },
+  "D2": {
+   "n_frames": 7,
+   "visits": [
+    {
+     "date": "2026-08-21",
+     "n": 7,
+     "wav": [
+      1.167,
+      1.477
+     ]
+    }
+   ]
+  },
+  "D3": {
+   "n_frames": 1,
+   "visits": [
+    {
+     "date": "2026-04-10",
+     "n": 1,
+     "wav": [
+      1.793,
+      1.793
+     ]
+    }
+   ]
+  },
+  "D4": {
+   "n_frames": 2,
+   "visits": [
+    {
+     "date": "2025-09-30",
+     "n": 2,
+     "wav": [
+      2.498,
+      3.604
+     ]
+    }
+   ]
+  },
+  "D5": {
+   "n_frames": 7,
+   "visits": [
+    {
+     "date": "2026-08-21",
+     "n": 7,
+     "wav": [
+      3.904,
+      4.256
+     ]
+    }
+   ]
+  },
+  "D6": {
+   "n_frames": 1,
+   "visits": [
+    {
+     "date": "2026-04-10",
+     "n": 1,
+     "wav": [
+      4.551,
+      4.551
+     ]
+    }
+   ]
+  }
+ }
+}
